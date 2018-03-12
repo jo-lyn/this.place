@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 54660511212759794}
   - component: {fileID: 114765600802095192}
   - component: {fileID: 114766962981869754}
-  - component: {fileID: 114032624936056196}
   m_Layer: 9
   m_Name: StoneBlock
   m_TagString: Untagged
@@ -40,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1526104144880422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: -3}
+  m_LocalPosition: {x: -3.034456, y: 1, z: -0.480801}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,18 +113,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114032624936056196
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1526104144880422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b6057242c125454aaed79b03f217a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlockMaterial: {fileID: 2100000, guid: e9775c8fb185b454eb77d5ac2e5b0afa, type: 2}
 --- !u!114 &114765600802095192
 MonoBehaviour:
   m_ObjectHideFlags: 1
