@@ -37,6 +37,50 @@ public class UVMap : MonoBehaviour, ITransparentRenderer
 
     private void SetUVs()
     {
+        Vector2[] blockUVs = new Vector2[24];
+
+        // Top
+        blockUVs[4] = new Vector2(0.0f, 0.75f);
+        blockUVs[5] = new Vector2(0.25f, 0.75f);
+        blockUVs[8] = new Vector2(0.0f, 1.0f);
+        blockUVs[9] = new Vector2(0.25f, 1.0f);
+
+        // Bottom
+        blockUVs[15] = new Vector2(0.0f, 0.75f);
+        blockUVs[12] = new Vector2(0.25f, 0.75f);
+        blockUVs[14] = new Vector2(0.0f, 1.0f);
+        blockUVs[13] = new Vector2(0.25f, 1.0f);
+
+        // North
+        blockUVs[0] = new Vector2(0.0f, 0.75f);
+        blockUVs[1] = new Vector2(0.25f, 0.75f);
+        blockUVs[2] = new Vector2(0.0f, 1.0f);
+        blockUVs[3] = new Vector2(0.25f, 1.0f);
+
+        // South
+        blockUVs[6] = new Vector2(0.0f, 0.75f);
+        blockUVs[7] = new Vector2(0.25f, 0.75f);
+        blockUVs[10] = new Vector2(0.0f, 1.0f);
+        blockUVs[11] = new Vector2(0.25f, 1.0f);
+
+        // East
+        blockUVs[23] = new Vector2(0.0f, 0.75f);
+        blockUVs[20] = new Vector2(0.25f, 0.75f);
+        blockUVs[22] = new Vector2(0.0f, 1.0f);
+        blockUVs[21] = new Vector2(0.25f, 1.0f);
+
+        // West
+        blockUVs[19] = new Vector2(0.0f, 0.75f);
+        blockUVs[16] = new Vector2(0.25f, 0.75f);
+        blockUVs[18] = new Vector2(0.0f, 1.0f);
+        blockUVs[17] = new Vector2(0.25f, 1.0f);
+
+        _mesh.uv = blockUVs;
+    }
+
+    /*
+    private void SetUVs()
+    {
         float tilePerc = 1 / PixelSize;
 
         float umin = tilePerc * x;
@@ -72,7 +116,7 @@ public class UVMap : MonoBehaviour, ITransparentRenderer
         blockUVs[23] = new Vector2(umax, vmin);
 
         _mesh.uv = blockUVs;
-    }
+    }*/
 
     public void SetFaceHighlight(BlockFace face)
     {
