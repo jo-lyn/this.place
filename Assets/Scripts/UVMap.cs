@@ -46,34 +46,34 @@ public class UVMap : MonoBehaviour, ITransparentRenderer
         blockUVs[9] = new Vector2(0.25f, 1.0f);
 
         // Bottom
-        blockUVs[15] = new Vector2(0.0f, 0.75f);
-        blockUVs[12] = new Vector2(0.25f, 0.75f);
-        blockUVs[14] = new Vector2(0.0f, 1.0f);
-        blockUVs[13] = new Vector2(0.25f, 1.0f);
+        blockUVs[15] = new Vector2(0.0f, 0.5f);
+        blockUVs[12] = new Vector2(0.25f, 0.5f);
+        blockUVs[14] = new Vector2(0.0f, 0.75f);
+        blockUVs[13] = new Vector2(0.25f, 0.75f);
 
         // North
-        blockUVs[0] = new Vector2(0.0f, 0.75f);
-        blockUVs[1] = new Vector2(0.25f, 0.75f);
-        blockUVs[2] = new Vector2(0.0f, 1.0f);
-        blockUVs[3] = new Vector2(0.25f, 1.0f);
+        blockUVs[0] = new Vector2(0.25f, 0.75f);
+        blockUVs[1] = new Vector2(0.5f, 0.75f);
+        blockUVs[2] = new Vector2(0.25f, 1.0f);
+        blockUVs[3] = new Vector2(0.5f, 1.0f);
 
         // South
-        blockUVs[6] = new Vector2(0.0f, 0.75f);
-        blockUVs[7] = new Vector2(0.25f, 0.75f);
-        blockUVs[10] = new Vector2(0.0f, 1.0f);
-        blockUVs[11] = new Vector2(0.25f, 1.0f);
+        blockUVs[6] = new Vector2(0.5f, 0.75f);
+        blockUVs[7] = new Vector2(0.75f, 0.75f);
+        blockUVs[10] = new Vector2(0.5f, 1.0f);
+        blockUVs[11] = new Vector2(0.75f, 1.0f);
 
         // East
-        blockUVs[23] = new Vector2(0.0f, 0.75f);
-        blockUVs[20] = new Vector2(0.25f, 0.75f);
-        blockUVs[22] = new Vector2(0.0f, 1.0f);
-        blockUVs[21] = new Vector2(0.25f, 1.0f);
+        blockUVs[23] = new Vector2(0.25f, 0.5f);
+        blockUVs[20] = new Vector2(0.5f, 0.5f);
+        blockUVs[22] = new Vector2(0.25f, 0.75f);
+        blockUVs[21] = new Vector2(0.5f, 0.75f);
 
         // West
-        blockUVs[19] = new Vector2(0.0f, 0.75f);
-        blockUVs[16] = new Vector2(0.25f, 0.75f);
-        blockUVs[18] = new Vector2(0.0f, 1.0f);
-        blockUVs[17] = new Vector2(0.25f, 1.0f);
+        blockUVs[19] = new Vector2(0.5f, 0.5f);
+        blockUVs[16] = new Vector2(0.75f, 0.5f);
+        blockUVs[18] = new Vector2(0.5f, 0.75f);
+        blockUVs[17] = new Vector2(0.75f, 0.75f);
 
         _mesh.uv = blockUVs;
     }
