@@ -653,8 +653,9 @@ GameObject:
   - component: {fileID: 570633815}
   - component: {fileID: 570633814}
   - component: {fileID: 570633813}
-  - component: {fileID: 570633812}
+  - component: {fileID: 570633818}
   - component: {fileID: 570633817}
+  - component: {fileID: 570633812}
   m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
@@ -670,16 +671,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 570633811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e313473df62674b8f963b19e0ef1fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 26d3224b9def85647b13ad6b57e05c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollidableLayers:
-    serializedVersion: 2
-    m_Bits: 512
-  Plugins:
-  - {fileID: 11400000, guid: d1e613b7cb6ea44428f87e94d524d71c, type: 2}
-  SkinToLengthRatio: 0.1
-  InitialSpeed: 1
+  FaceLength: 1
 --- !u!23 &570633813
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -724,8 +719,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!33 &570633815
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -755,10 +750,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 570633811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26d3224b9def85647b13ad6b57e05c75, type: 3}
+  m_Script: {fileID: 11500000, guid: b2e313473df62674b8f963b19e0ef1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FaceLength: 1
+  CollidableLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  Plugins: []
+  SkinToLengthRatio: 0.1
+  InitialSpeed: 1
+--- !u!95 &570633818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570633811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d98380cf69181f4bab21f4618cc843b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &572867759
 Prefab:
   m_ObjectHideFlags: 0
@@ -824,9 +841,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 655311546}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0.5, z: -0.51}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 570633816}
   m_RootOrder: 0
@@ -865,15 +882,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a35d05d323761c844aa52fc8fd49c82e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!95 &655311549
 Animator:
@@ -884,7 +901,7 @@ Animator:
   m_GameObject: {fileID: 655311546}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c03077cad12f2df438dc11c8a23522c7, type: 2}
+  m_Controller: {fileID: 9100000, guid: f1ea12dcb009c1a44b385dc0287b31c0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1611,7 +1628,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1332610038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: -0.31}
+  m_LocalPosition: {x: -1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 570633816}
