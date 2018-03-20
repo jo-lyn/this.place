@@ -47,16 +47,16 @@ public class UVMapBlender : MonoBehaviour
         blockUVs[13] = new Vector2(0.25f, 0.75f);
     
         // North
-        blockUVs[4] = new Vector2(0.25f, 0.75f);
-        blockUVs[7] = new Vector2(0.5f, 0.75f);
-        blockUVs[5] = new Vector2(0.25f, 1.0f);
-        blockUVs[6] = new Vector2(0.5f, 1.0f);
+        blockUVs[6] = new Vector2(0.25f, 0.75f);
+        blockUVs[5] = new Vector2(0.5f, 0.75f);
+        blockUVs[7] = new Vector2(0.25f, 1.0f);
+        blockUVs[4] = new Vector2(0.5f, 1.0f);
 
         // South
-        blockUVs[0] = new Vector2(0.5f, 0.75f);
-        blockUVs[1] = new Vector2(0.75f, 0.75f);
-        blockUVs[3] = new Vector2(0.5f, 1.0f);
-        blockUVs[2] = new Vector2(0.75f, 1.0f);
+        blockUVs[2] = new Vector2(0.5f, 0.75f);
+        blockUVs[3] = new Vector2(0.75f, 0.75f);
+        blockUVs[1] = new Vector2(0.5f, 1.0f);
+        blockUVs[0] = new Vector2(0.75f, 1.0f);
 
         // East
         blockUVs[19] = new Vector2(0.25f, 0.5f);
