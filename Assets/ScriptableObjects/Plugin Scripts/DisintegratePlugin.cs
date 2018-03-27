@@ -13,7 +13,7 @@ public class DisintegratePlugin : BlockPlugin, IDisplaceable
     private const float Acceleration = 30f;
     private const float GravityAcceleration = 5f;
 
-    private Animator _aminator;
+    private Animator _animator;
 
     public override void Plug(BlockBehaviour blockBehaviour)
     {
@@ -21,7 +21,7 @@ public class DisintegratePlugin : BlockPlugin, IDisplaceable
         _isDisplaced = false;
         _directionOfTravel = BlockFace.Unknown;
         _block = blockBehaviour;
-        _aminator = blockBehaviour.GetComponent<Animator>();
+        _animator = blockBehaviour.GetComponent<Animator>();
     }
 
     public override void OnFaceClick (BlockFace face)
@@ -35,7 +35,7 @@ public class DisintegratePlugin : BlockPlugin, IDisplaceable
             }
         }
 
-        _aminator.SetTrigger("BlockPulled");
+        _animator.SetTrigger("BlockPulled");
     }
 
     public override void OnUpdate()
