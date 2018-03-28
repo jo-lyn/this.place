@@ -50,8 +50,9 @@ public class RayBehavior : MonoBehaviour
     {
         Line.SetPosition(0, BeginLocation.transform.position + (Offset * RadiusA));
         Line.SetPosition(1, EndLocation.transform.position + (Offset * RadiusB));
-        
-        Line.SetWidth(WidthA, WidthB);
+
+        Line.startWidth = WidthA;
+        Line.endWidth = WidthB;
     }
 
 
@@ -73,11 +74,8 @@ public class RayBehavior : MonoBehaviour
             UpdateLineData();
         }
 
-        
-        Line.SetColors(new Color(BeginColor.r, BeginColor.g, BeginColor.b, AlphaCurve),
-            new Color(EndColor.r, EndColor.g, EndColor.b, AlphaCurve));
-        
-
+        Line.startColor = new Color(BeginColor.r, BeginColor.g, BeginColor.b, AlphaCurve);
+        Line.endColor = new Color(EndColor.r, EndColor.g, EndColor.b, AlphaCurve);
         
         //Line.renderer.material.color = new Color(1, 1, 1, AlphaCurve);
 	
