@@ -5,6 +5,7 @@ Shader "Custom/GradientShader" {
       _TintYn("Tint Y-", Color) = (1,1,1,1)
       _Height("Height", Float) = 1
       _MainTex("Albedo (RGB)", 2D) = "white" {}
+	  _Color("Main Color"  ,Color)   = (1,1,1,1)
    }
       SubShader{
       Tags{ "RenderType" = "Opaque" "DisableBatching" = "True"}
@@ -25,6 +26,7 @@ Shader "Custom/GradientShader" {
       float4 _TintYn;
       float _Height;
       sampler2D _MainTex;
+	  float4 _Color;
  
       void vert(inout appdata_full v, out Input o) {
          UNITY_INITIALIZE_OUTPUT(Input, o);
@@ -42,12 +44,11 @@ Shader "Custom/GradientShader" {
          half4 color;
      
          float4 ty = lerp(_TintYn,_TintYp, IN.dy);
-         color = tex2D(_MainTex, IN.uv_MainTex) * ty;
+         color = tex2D(_MainTex, IN.uv_MainTex) * ty * _Color;
          o.Albedo = color;
          o.Alpha = color.a;
       }
- 
       ENDCG
    }
-      FallBack "Diffuse"
+   FallBack "Diffuse"
 }
