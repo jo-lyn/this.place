@@ -1,16 +1,16 @@
 ﻿// https://forum.unity.com/threads/height-based-gradient-shader.486727/
 Shader "Custom/Coin" {
-   Properties{
-      _TintXp("Tint X+", Color) = (1,1,1,1)
-      _TintXn("Tint X-", Color) = (1,1,1,1)
-      _Height("Height", Float) = 1
-      _MainTex("Albedo (RGB)", 2D) = "white" {}
-	  _Color("Main Color"  ,Color)   = (1,1,1,1)
+   Properties {
+      _TintXp ("Tint X+", Color) = (1,1,1,1)
+      _TintXn ("Tint X-", Color) = (1,1,1,1)
+      _Height ("Height", Float) = 1
+      _MainTex ("Albedo (RGB)", 2D) = "white" {}
+	  _Color ("Main Color"  ,Color)   = (1,1,1,1)
 	  _Metallic ("Metallic", Range(0,1)) = 0.0
 	  _Smoothness ("Smoothness", Range(0,1)) = 0.0
    }
-      SubShader{
-      Tags{ "RenderType" = "Opaque" "DisableBatching" = "True"}
+      SubShader {
+      Tags { "RenderType" = "Opaque" "DisableBatching" = "True" }
       LOD 200
  
       CGPROGRAM
