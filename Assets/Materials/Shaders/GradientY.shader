@@ -1,5 +1,5 @@
 ﻿// https://forum.unity.com/threads/height-based-gradient-shader.486727/
-Shader "Custom/GradientShader" {
+Shader "Custom/GradientY" {
    Properties{
       _TintYp("Tint Y+", Color) = (1,1,1,1)
       _TintYn("Tint Y-", Color) = (1,1,1,1)
